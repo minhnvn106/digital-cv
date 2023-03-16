@@ -1,0 +1,44 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  #nav-bar .container .col:nth-child(2),
+  #nav-bar .container .col:nth-child(4) {
+    border-right: 1px solid #6c757d !important;
+    border-left: 1px solid #6c757d !important;
+  }
+
+  #nav-bar .container .col:not(:last-child) {
+    border-bottom: none !important;
+  }
+
+  /* PHƯƠNG PHÁP CONTAINER TỪ ASM 2 MÀ KO CÓ TRONG YÊU CẦU DÙNG BOOTSTRAP CỦA ASM 3  */
+
+  /* ** YÊU CẦU 3: 
+  Phần Navbar cho hai màn hình mobile và laptop */
+
+  #nav-bar .container .col {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #nav-bar .container .col a {
+    align-items: center;
+    padding-left: 25vw;
+
+    /* DISPLAY BLOCK THÌ ICON VÀ TEXT KHÔNG THẲNG HÀNG (CĂN GIỮA BLOCK) */
+    /* display: block; */
+
+    /* CHỌN DISPLAY FLEX DO CÁC ITEM (ICON VÀ TEXT) MẶC ĐỊNH CĂN FLEX START (BÊN TRÁI) */
+    display: flex;
+  }
+  #certificate .line-odd {
+    display: block;
+  }
+  #certificate .border {
+    border-right: 0 !important;
+  }
+
+  .view-more {
+    display: block;
+  }
+}
+
+/* ================== DIGITAL CV =============== */
